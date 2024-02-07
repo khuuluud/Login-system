@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="login d-flex justify-content-center align-items.center " id="login">
+        <div class="container text-center my-5 w-75 p-5">
+            <h1>Smart Login System</h1>
+            <form>
+                <input type="text" id="emailinput" placeholder="Enter your Email" class="form-control mb-3 text-light">
+                <input type="password" id="passinput" placeholder="Enter your password" class="form-control mb-3 text-light">
+
+            </form>
+            <div class="d-grid gap-2 col-12 mx-auto ">
+                <p id="no" class="text-danger fw-semibold"></p>
+                <button class="btn mb-3" id="btnlogin" type="button">Login</button>
+            </div>
+            <p>Don’t have an account? <a href="#signin" id="signup" class="text-white"> Sign Up</a></p>
+        </div>
+    </div>
+
+    <div class="reg d-none justify-content-center align-items.center " id="reg">
+        <div class="container text-center my-5 w-75 p-5">
+            <h1>Smart Regester System</h1>
+            <form>
+                <input type="text" id="regname" placeholder="Enter your name" class="form-control mb-3 text-light">
+                <input type="text" id="regemail" placeholder="Enter your Email" class="form-control mb-3 text-light ">
+                <input type="password" id="regpass" placeholder="Enter your password" class="form-control mb-3 text-light">
+
+            </form>
+            <div class="d-grid gap-2 col-12 mx-auto ">
+                <p id="yes" class="text-danger"></p>
+                <p id="valid" class="text-success fw-semibold"></p>
+                <button class="btn mb-3" type="button" id="registerBtn">Register</button>
+            </div>
+            <p>Don’t have an account? <a href="#signin" id="signin" class="text-white"> Sign in</a></p>
+        </div>
+    </div>
+
+    <div class="home-section  d-none  flex-column " id="home">
+
+
+        <nav class="navbar navbar-expand-lg w-100 mb-5">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand text-uppercase fw-semibold text-light" href="#">Smart Login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                        <a class="nav-link text-secondary fw-semibold"  id="logout" href="#">Logout</a>
+                        
+                      </div>
+                    
+                </div>
+            </div>
+        </nav>
+        
+            <div class="container text-center w-75 p-5 " >
+
+                <h1 id="intro" class="fw-semibold">Welcome</h1>
+
+            </div>
+        
+    </div>
+
+
+
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
